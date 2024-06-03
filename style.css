@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0000006e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 50px auto;
+  max-width: 500px;
+  height: auto;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 30px;
+  padding: 10px;
+}
+
+.searchBar .search-box {
+  width: 80%;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.searchBar .search-btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.weather-condition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.weather-icon img {
+  width: 130px;
+  height: 130px;
+}
+
+.weather-condition .temp {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.weather-condition .city-name {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.other-condition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 30px;
+  color: #fff;
+}
+
+.humidity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.humidity .hum-icon {
+  margin-right: 10px;
+  font-size: 55px;
+}
+
+.humidity p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hum-info .humidity-per {
+  font-size: 25px;
+}
+
+.wind-speed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.wind-speed .wind-icon {
+  margin-right: 10px;
+  font-size: 55px;
+}
+
+.wind-speed p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wind-info .show-speed {
+  font-size: 25px;
+}
+
+.wind-info .km {
+  font-size: 16px;
+}
+
+.display-container {
+  display: none;
+}
+
+.error {
+  width: 50%;
+  color: #fff;
+  margin: -20px 0 10px 55px;
+  font-size: 14px;
+  font-weight: 900;
+  display: none;
+}
